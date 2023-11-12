@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-image: url("./resources/index-background.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
 .App-logo {
@@ -13,6 +16,16 @@
   }
 }
 
+.Intro-container {
+  height: fit-content;
+  width: 50%;
+  background-color: antiquewhite;
+  margin-top: 1rem;
+  position: absolute;
+  left: 25%;
+  border-radius: 30px;
+}
+
 .App-main {
   min-height: 100vh;
   display: flex;
@@ -21,9 +34,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-  background-image: url("./resources/index-background.jpg");
-  background-repeat:no-repeat;
-  background-size: cover;
 }
 
 .App-link {
