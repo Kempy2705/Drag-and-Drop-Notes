@@ -5,16 +5,6 @@
   background-size: cover;
 }
 
-.Intro-container {
-  height: fit-content;
-  width: 50%;
-  background-color: antiquewhite;
-  margin-top: 1rem;
-  position: absolute;
-  left: 25%;
-  border-radius: 30px;
-}
-
 
 .App-main {
   min-height: 100vh;
