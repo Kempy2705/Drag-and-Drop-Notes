@@ -1,6 +1,6 @@
-import logo from '../logo.svg';
 import './App.css';
 import NavBar from '../NavBar/NavBar';
+import App_Footer from '../App-Footer/App-Footer';
 
 function App() {
   return (
@@ -16,14 +16,7 @@ function App() {
       </header>
       <main className='App-main'>
       </main>
-      <footer className='App-Footer'>
-      <div className='Made-with-react'>
-          <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Made with <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">React</a>
-        </p>
-        </div>
-      </footer>
+      <App_Footer/>
     </div>
   );
 }
