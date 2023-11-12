@@ -6,7 +6,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 6vmin;
   pointer-events: none;
 }
 
@@ -26,6 +26,15 @@
   border-radius: 30px;
 }
 
+.Made-with-react {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: black;
+}
+
 .App-main {
   min-height: 100vh;
   display: flex;
@@ -34,6 +43,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
+}
+
+.App-Footer {
+  height: fit-content;
+  width: 100%;
+  background-color: rgba(239, 249, 135, 0.900);
 }
 
 .App-link {
