@@ -1,9 +1,7 @@
 .Intro-container {
-    height: fit-content;
-    width: 50%;
+    height:max-content;
+    margin: 1rem 0rem;
+    padding: 1rem;
     background-color: antiquewhite;
-    margin-top: 1rem;
-    position: absolute;
-    left: 25%;
     border-radius: 30px;
   }

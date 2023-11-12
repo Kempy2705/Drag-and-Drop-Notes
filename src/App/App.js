@@ -6,11 +6,12 @@ import Intro from '../Introduction/Intro';
 function App() {
   return (
     <div className="App">
-      <nav className='Nav-Bar'>
-        <NavBar />
-      </nav>
+      <NavBar />
       <main className='App-main'>
-        <Intro />
+       <Intro/>
+       <div className="Notepad-Container">
+        
+       </div>
       </main>
       <App_Footer/>
     </div>
