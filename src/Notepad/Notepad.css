@@ -17,6 +17,7 @@
     background-color: rgba(239, 249, 135, 0.900);
 }
 
-.note-title {
-    font-family: 'Indie Flower', cursive;;
+.notepad-title {
+    font-family: 'Indie Flower', cursive;
+    text-decoration: underline;
 }

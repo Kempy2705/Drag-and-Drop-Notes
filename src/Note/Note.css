@@ -1,0 +1,15 @@
+.note {
+    border: 1px solid black;
+    height: 30%;
+
+}
+
+.text-field {
+    margin-top: 20%;
+    height: 80%;
+    width: 95%;
+    overflow: auto;
+    background: transparent;
+    border: none;
+    resize: none;
+}
