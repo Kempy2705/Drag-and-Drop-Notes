@@ -3,8 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Plans to implement:
-* The ability to drag and drop notes into other containers with customizable names.
 * The ability to add, edit and delete notes.
+* The ability move notes into other containers with customizable names.
 * Login Functionality along with ability to save notes. (Front End Design at this stage).
 
 Using this as an oppurtunity to play around with styles and CSS animation as well.
