@@ -1,0 +1,22 @@
+.notepad-container {
+    min-height:75vh;
+    width: 80%;
+    background-color:antiquewhite;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+.notepad {
+    height: auto;
+    margin: 2rem;
+    width:25%;
+    border-radius: 15px;
+    background-color: rgba(239, 249, 135, 0.900);
+}
+
+.note-title {
+    font-family: 'Indie Flower', cursive;;
+}

@@ -2,6 +2,7 @@ import './App.css';
 import NavBar from '../NavBar/NavBar';
 import AppFooter from '../App-Footer/AppFooter.js';
 import Intro from '../Introduction/Intro';
+import NotePad from '../Notepad/Notepad.js';
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
       <NavBar />
       <main className='App-main'>
        <Intro/>
-       <div className="Notepad-Container">
-
-       </div>
+        <NotePad />
       </main>
       <AppFooter/>
     </div>
