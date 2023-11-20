@@ -17,6 +17,21 @@
     background-color: rgba(239, 249, 135, 0.900);
 }
 
+.add-note-button {
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 56px;
+    margin: 1rem;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.add-note-button:hover {
+    background-color: lightgrey;
+}
+
 .notepad-title {
     font-family: 'Indie Flower', cursive;
     text-decoration: underline;

@@ -10,7 +10,7 @@ export default function NotePad({notes, onAddNote, updateNoteStatus, updateNoteC
     return (
         <>
         <div className='notepad-container'>
-            <button onClick={onAddNote}>Add Note</button>
+            <button className="add-note-button" onClick={onAddNote}>+</button>
             <div className='notepad'>
                     <h2 className='notepad-title'>To Do</h2>
                     {notes.filter((note) => note.status === 'todo')

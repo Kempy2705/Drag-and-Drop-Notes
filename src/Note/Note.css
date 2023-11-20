@@ -7,6 +7,30 @@
 
 }
 
+.note-button {
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.note-delete-button {
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.note-button:hover {
+    background-color: lightgrey;
+}
+
+.note-delete-button:hover {
+    background-color: lightcoral;
+}
+
 .text-field {
     height: 120px;
     width: 90%;
@@ -15,3 +39,4 @@
     border: none;
     resize: none;
 }
+
