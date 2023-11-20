@@ -5,6 +5,8 @@ export default function Note() {
         <>
         <div className='note'>
             <textarea className='text-field' placeholder='Write Something...'/>
+            <button>Left</button>
+            <button>Right</button>
         </div>
         </>
     )
