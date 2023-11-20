@@ -2,14 +2,22 @@ import { useState } from 'react';
 import './Note.css';
 
 
-export default function Note() {
+export default function Note({note, updateNoteStatus, updateNoteContent}) {
+
+    const handleContentChange = (e) => {
+        updateNoteContent(note.id, e.target.value);
+    };
 
     return (
         <>
         <div className='note'>
-            <textarea className='text-field' placeholder='Write Something...' />
-            <button>Mark In Progress</button>
-            <button>Mark Done</button>
+            <textarea 
+            className='text-field' 
+            placeholder='Write Something...' 
+            value={note.content} 
+            onChange={handleContentChange} />
+            <button onClick={() => updateNoteStatus(note.id, 'inProgress')}>Mark In Progress</button>
+            <button onClick={() => updateNoteStatus(note.id, 'Done')}>Mark Done</button>
             <button>Delete</button>
         </div>
         </>

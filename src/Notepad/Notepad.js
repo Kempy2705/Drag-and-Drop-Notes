@@ -5,9 +5,7 @@ import uuid from 'react-uuid';
 
 
 
-export default function NotePad({notes, onAddNote}) {
-
-
+export default function NotePad({notes, onAddNote, updateNoteStatus, updateNoteContent}) {
 
     return (
         <>
@@ -20,14 +18,34 @@ export default function NotePad({notes, onAddNote}) {
                         <Note
                          key={note.id}
                          note={note}
+                         updateNoteStatus={updateNoteStatus}
+                         updateNoteContent={updateNoteContent}
                          />
                     ))}
                 </div>
                 <div className='notepad'>
                     <h2 className='notepad-title'>In Progress</h2>
+                    {notes.filter((note) => note.status === 'inProgress')
+                    .map((note) => (
+                        <Note
+                         key={note.id}
+                         note={note}
+                         updateNoteStatus={updateNoteStatus}
+                         updateNoteContent={updateNoteContent}
+                         />
+                    ))}
                 </div>
                 <div className='notepad'>
                     <h2 className='notepad-title'>Done</h2>
+                    {notes.filter((note) => note.status === 'Done')
+                    .map((note) => (
+                        <Note
+                         key={note.id}
+                         note={note}
+                         updateNoteStatus={updateNoteStatus}
+                         updateNoteContent={updateNoteContent}
+                         />
+                    ))}
                 </div>
         </div>
         </>

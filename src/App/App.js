@@ -24,6 +24,23 @@ function App() {
     
   }
 
+  const updateNoteStatus = (id, newStatus) => {
+    setNotes((prevNotes) => 
+      prevNotes.map((note) => 
+        note.id === id ? {...note, status: newStatus} : note
+      )
+    );
+  };
+
+
+  const updateNoteContent = (id, newContent) => {
+    setNotes((prevNotes) => 
+      prevNotes.map((note) => 
+      note.id === id ? {...note, content: newContent} : note
+      )
+    );
+  };
+
   return (
     <div className="App">
       <NavBar />
@@ -31,7 +48,10 @@ function App() {
        <Intro/>
         <NotePad
           notes={notes}
-          onAddNote={addNote}/>
+          onAddNote={addNote}
+          updateNoteStatus={updateNoteStatus}
+          updateNoteContent={updateNoteContent}/>
+          
       </main>
       <AppFooter/>
     </div>
