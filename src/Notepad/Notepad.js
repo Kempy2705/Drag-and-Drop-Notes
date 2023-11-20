@@ -1,36 +1,33 @@
-import './Notepad.css';
+import { useState } from 'react';
 import Note from '../Note/Note';
+import './Notepad.css';
+import uuid from 'react-uuid';
 
 
-export default function NotePad({todoNotes, inProgressNotes, doneNotes, onAddNote}) {
+
+export default function NotePad({notes, onAddNote}) {
+
+
+
     return (
         <>
         <div className='notepad-container'>
             <button onClick={onAddNote}>Add Note</button>
             <div className='notepad'>
                     <h2 className='notepad-title'>To Do</h2>
-                         {todoNotes.map((note) => {
-                            return (
-                                <Note />
-                            )
-                        })}
-                    
+                    {notes.filter((note) => note.status === 'todo')
+                    .map((note) => (
+                        <Note
+                         key={note.id}
+                         note={note}
+                         />
+                    ))}
                 </div>
                 <div className='notepad'>
                     <h2 className='notepad-title'>In Progress</h2>
-                        {inProgressNotes.map((note) => {
-                            return (
-                                <Note />
-                            )
-                        })}
                 </div>
                 <div className='notepad'>
                     <h2 className='notepad-title'>Done</h2>
-                        {doneNotes.map((note) => {
-                                return (
-                                    <Note />
-                                )
-                            })}
                 </div>
         </div>
         </>

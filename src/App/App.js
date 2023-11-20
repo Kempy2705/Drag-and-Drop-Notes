@@ -8,27 +8,30 @@ import { useState } from 'react';
 import uuid from 'react-uuid';
 
 
-function App() {
-  const [todoNotes,setNotes] = useState([]);
-  const [inProgressNotes,setInProgressNotes] = useState([]);
-  const [doneNotes,setDoneNotes] = useState([]);
 
-  function onAddNote() {
+function App() {
+  const [notes,setNotes] = useState([]);
+
+  const addNote = () => {
     const newNote = {
       id: uuid(),
-      body: ""
-    };
-
-setNotes([newNote, ...todoNotes]);
+      body: '',
+      status: 'todo'
+    }
+    if (notes.length < 3) {
+      setNotes([...notes, newNote]);
+    }
+    
   }
-
 
   return (
     <div className="App">
       <NavBar />
       <main className='App-main'>
        <Intro/>
-        <NotePad todoNotes={todoNotes} inProgressNotes={inProgressNotes} doneNotes={doneNotes} onAddNote={onAddNote}/>
+        <NotePad
+          notes={notes}
+          onAddNote={addNote}/>
       </main>
       <AppFooter/>
     </div>

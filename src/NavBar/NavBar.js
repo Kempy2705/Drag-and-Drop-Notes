@@ -5,7 +5,7 @@ export default function NavBar() {
     return (
         <>
         <div className="navBar-container">
-        <h1 className='title'>Dnd Notes! (Drag and Drop)</h1>
+        <h1 className='title'>Track Your Notes</h1>
         </div>
         </>
     );
