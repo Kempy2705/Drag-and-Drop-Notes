@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Note.css';
 
 
-export default function Note({note, updateNoteStatus, updateNoteContent}) {
+export default function Note({note, updateNoteStatus, updateNoteContent, deleteNote}) {
 
     const handleContentChange = (e) => {
         updateNoteContent(note.id, e.target.value);
@@ -18,7 +18,7 @@ export default function Note({note, updateNoteStatus, updateNoteContent}) {
             onChange={handleContentChange} />
             <button onClick={() => updateNoteStatus(note.id, 'inProgress')}>Mark In Progress</button>
             <button onClick={() => updateNoteStatus(note.id, 'Done')}>Mark Done</button>
-            <button>Delete</button>
+            <button onClick={() => deleteNote(note.id)}>Delete</button>
         </div>
         </>
     )

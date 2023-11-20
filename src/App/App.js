@@ -41,6 +41,10 @@ function App() {
     );
   };
 
+  const deleteNote = (id) => {
+    setNotes((prevNotes) => prevNotes.filter((note) => note.id !== id));
+  }
+
   return (
     <div className="App">
       <NavBar />
@@ -50,8 +54,8 @@ function App() {
           notes={notes}
           onAddNote={addNote}
           updateNoteStatus={updateNoteStatus}
-          updateNoteContent={updateNoteContent}/>
-          
+          updateNoteContent={updateNoteContent}
+          deleteNote={deleteNote}/>
       </main>
       <AppFooter/>
     </div>

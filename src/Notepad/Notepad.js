@@ -5,7 +5,7 @@ import uuid from 'react-uuid';
 
 
 
-export default function NotePad({notes, onAddNote, updateNoteStatus, updateNoteContent}) {
+export default function NotePad({notes, onAddNote, updateNoteStatus, updateNoteContent, deleteNote}) {
 
     return (
         <>
@@ -20,6 +20,7 @@ export default function NotePad({notes, onAddNote, updateNoteStatus, updateNoteC
                          note={note}
                          updateNoteStatus={updateNoteStatus}
                          updateNoteContent={updateNoteContent}
+                         deleteNote={deleteNote}
                          />
                     ))}
                 </div>
@@ -32,6 +33,7 @@ export default function NotePad({notes, onAddNote, updateNoteStatus, updateNoteC
                          note={note}
                          updateNoteStatus={updateNoteStatus}
                          updateNoteContent={updateNoteContent}
+                         deleteNote={deleteNote}
                          />
                     ))}
                 </div>
@@ -44,6 +46,7 @@ export default function NotePad({notes, onAddNote, updateNoteStatus, updateNoteC
                          note={note}
                          updateNoteStatus={updateNoteStatus}
                          updateNoteContent={updateNoteContent}
+                         deleteNote={deleteNote}
                          />
                     ))}
                 </div>
