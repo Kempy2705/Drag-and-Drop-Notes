@@ -1,13 +1,16 @@
 .note {
     border: 1px solid black;
     height: 30%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 10px;
 
 }
 
 .text-field {
-    height: 80%;
-    width: 95%;
-    overflow: auto;
+    height: 120px;
+    width: 90%;
+    overflow:hidden;
     background: transparent;
     border: none;
     resize: none;

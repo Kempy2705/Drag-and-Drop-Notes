@@ -18,9 +18,9 @@ function App() {
       body: '',
       status: 'todo'
     }
-    if (notes.length < 3) {
+    
       setNotes([...notes, newNote]);
-    }
+    
     
   }
 

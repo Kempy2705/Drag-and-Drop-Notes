@@ -1,16 +1,16 @@
 .notepad-container {
-    min-height:75vh;
+    margin-bottom: 1rem;
+    min-height:fit-content;
     width: 80%;
     background-color:antiquewhite;
     border-radius: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
   }
 
 .notepad {
-    height: auto;
+    height: fit-content;
     margin: 2rem;
     width:25%;
     border-radius: 15px;
