@@ -1,12 +1,12 @@
-import { useState } from 'react';
 import Note from '../Note/Note';
 import './Notepad.css';
-import uuid from 'react-uuid';
 
 
 
 export default function NotePad({notes, onAddNote, updateNoteStatus, updateNoteContent, deleteNote}) {
 
+
+    // Provide the JSX for the NotePad Container Component
     return (
         <>
         <div className='notepad-container'>

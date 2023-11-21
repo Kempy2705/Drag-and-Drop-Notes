@@ -2,6 +2,8 @@ import './Intro.css';
 
 
 export default function Intro() {
+
+  // Provide the JSX for the Intro Box Component
     return (
         <>
         <header className="App-header">

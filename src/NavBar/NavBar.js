@@ -2,6 +2,8 @@ import './NavBar.css'
 
 
 export default function NavBar() {
+
+    // Provide the JSX for the Navbar Component
     return (
         <>
         <div className="navBar-container">

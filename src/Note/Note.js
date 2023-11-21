@@ -1,13 +1,14 @@
-import { useState } from 'react';
 import './Note.css';
 
 
 export default function Note({note, updateNoteStatus, updateNoteContent, deleteNote}) {
 
+
+    // Ensures that the notes content or 'body' is updated as the user typs in their commands
     const handleContentChange = (e) => {
         updateNoteContent(note.id, e.target.value);
     };
-
+    // Provide the JSX for the Note Component
     return (
         <>
         <div className='note'>
